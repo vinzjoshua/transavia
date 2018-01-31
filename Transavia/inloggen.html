@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Transavia Verhalen</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+</head>
+    <body>
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="inloggen.html">Mijn Transavia</a></li>
+                        <li><a href="lijst.html">Mijn Lijst</a></li>
+                        <li class="displayNone"></li>
+                    </ul>
+                </nav>
+                <section>
+                    <img src="assets/images/banner-image.jpg" alt="Banner foto van Transavia">
+                    <img src="assets/images/logo-transavia-white.svg" alt="Logo van Transavia">
+                </section>
+        </header>
+
+        <main>
+        <section>
+                <h1>Inloggen & Registreren</h1>
+                <p>Meld je nu aan om de beste verhalen te lezen voor onderweg!</p>
+        </section>
+
+            <form>
+                <fieldset>
+                    <legend>Inloggen</legend>
+                    <p>Vul je e-mailadres en wachtwoord in om in te loggen.</p>
+
+                  <input required placeholder="Gebruikersnaam" type="text" name="username">
+
+
+                        <input required placeholder="Wachtwoord" type="text" name="password" pattern=".{6,}" title="Zes of meer karakters">
+
+
+                         <input type="submit" name="submit" value="Login">
+                </fieldset>
+            </form>
+
+            <form action="" method="post" id="login">
+                <fieldset>
+                    <legend>Registreren</legend>
+<!--                       ik heb hier geen labes gebruikt, ook al is dat wellicht wel een vereisten van w3c, ik vond het niet mooi staan... ik kan er wel labels bij neerzetten maar dit is niet hoe ik het zelf zou willen-->
+                        <p>Neem even de tijd om je persoonlijke account in te stellen en bespaar tijd bij je volgende avontuur!</p>
+                         <input placeholder="Voornaam" required type="text" name="firstname">
+
+                        <input required placeholder="Achternaam"  type="text" name="lastname">
+
+                         <input required placeholder="Geboortedatum" type="date" name="birthday">
+
+                         <input required placeholder="Email adres" type="email" id="email" name="emailaddress" >
+
+                        <input required placeholder="Gebruikersnaam" type="text" name="username">
+
+                         <input required placeholder="Wachtwoord" type="password" name="pwd" pattern=".{6,}" title="Het wachtwoord moet minstens 6 karakters bevatten" id="pwd" >
+
+                         <input type="checkbox" id="show-hide" name="show-hide" value=""> <label for="show-hide">Toon wachtwoord</label>
+
+                        <input type="submit" name="submit" value="Registreer">
+                </fieldset>
+            </form>
+
+        </main>
+<script src="assets/javascript/password.js"
+></script>
+
+    </body>
+</html>
+
+
+
